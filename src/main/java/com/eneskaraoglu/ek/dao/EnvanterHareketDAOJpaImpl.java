@@ -133,7 +133,7 @@ public class EnvanterHareketDAOJpaImpl implements EnvanterHareketDAO {
 
 		// yeni kayıt ise insert
 		if (sonMiktar.compareTo(new BigDecimal(0)) < 0) {
-			System.out.println("Miktar eksiye düşümez!!! kontrol = " + sonMiktar);
+			System.out.println("Miktar eksiye düşemez!!! kontrol = " + sonMiktar);
 			throw new RuntimeException("Miktar eksiye düşümez!!! kontrol = " + sonMiktar);
 		}
 
